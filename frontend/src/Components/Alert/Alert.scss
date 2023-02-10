@@ -1,0 +1,28 @@
+.alert_ {
+  transform: translateX(-50%);
+  z-index: 1000;
+  position: fixed;
+  max-width: 80%;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: show-alert 0.2s ease-in-out;
+}
+
+@keyframes show-alert {
+  0% {
+    transform: translateX(-50%) scale(0);
+  }
+  25% {
+    transform: translateX(-50%) scale(0.2);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.5);
+  }
+  75% {
+    transform: translateX(-50%) scale(0.8);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}

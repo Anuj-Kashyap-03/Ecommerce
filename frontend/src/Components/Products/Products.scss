@@ -1,0 +1,150 @@
+.search-form {
+  display: flex;
+  border-radius: 11px;
+  border: 1px solid #ccc2c2;
+  .search-field {
+    flex: 1;
+  }
+  .form_control {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.products_ {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.products {
+  .loader2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .topdiv {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    .show_filter_button {
+      display: none;
+    }
+  }
+  .search-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    fieldset {
+      border: none;
+    }
+    input {
+      padding: 10px 0px 10px 30px;
+    }
+    .form_control {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+    }
+  }
+}
+
+.filters_and_products {
+  display: flex;
+  gap: 30px;
+  .filters {
+    background-color: white;
+    padding: 25px;
+    width: 30%;
+    max-width: 30%;
+    flex-direction: column;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+    .close_side_filters {
+      justify-content: flex-end;
+      display: none;
+    }
+    .applied_filters {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .filters_list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .categories {
+      display: flex;
+      flex-direction: column;
+      button {
+        border: none;
+        max-width: fit-content;
+      }
+    }
+    .range {
+      > div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    .apply {
+      margin-bottom: 100px;
+    }
+  }
+  .error {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products {
+    .topdiv {
+      .show_filter_button {
+        width: 50px;
+        height: 50px;
+        display: block;
+      }
+    }
+  }
+  .filters_and_products {
+    .filters {
+      position: fixed;
+      overflow: scroll;
+      top: 0%;
+      min-height: 100vh;
+      max-height: 100vh;
+      z-index: 5;
+      padding: 20px !important;
+      width: 300px;
+      max-width: 60%;
+      display: flex !important;
+      transform: translateX(-100%);
+      max-width: 70%;
+      left: 0;
+      transition: all 0.5s;
+      .close_side_filters {
+        display: flex;
+      }
+    }
+  }
+}
+
+.showfilters {
+  transform: translateX(0%) !important;
+}

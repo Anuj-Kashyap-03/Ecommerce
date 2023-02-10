@@ -1,0 +1,26 @@
+.PageNotFound {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.PageNotFound > svg {
+  font-size: 50px;
+  color: tomato;
+}
+.PageNotFound > p {
+  font-size: 30px;
+}
+.PageNotFound > a {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font: 400 20px "Roboto";
+  text-decoration: none;
+}

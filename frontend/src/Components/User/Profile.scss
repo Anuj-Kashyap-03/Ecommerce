@@ -1,0 +1,103 @@
+@import "../../style/varibles";
+
+.shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.accountInfo {
+  padding: 5px;
+  margin-bottom: 20px;
+  .row {
+    gap: 20px;
+  }
+  .avatar {
+    display: flex;
+    justify-content: center;
+    div {
+      font-size: 150px;
+    }
+  }
+  .imagediv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .updateimage {
+    overflow: hidden;
+    padding: 20px 0px;
+    width: 200px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    input,
+    span {
+      display: inline;
+      color: $anujblue;
+      margin: 6px 0px;
+    }
+    span:hover {
+      cursor: pointer;
+    }
+  }
+  .desktop {
+    padding: 20px 25px;
+  }
+}
+
+.detailsdiv {
+  .name h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  }
+  .join h4 {
+    font-weight: 500;
+  }
+  .links {
+    .link {
+      text-decoration: none;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.tab-content {
+  flex: 1;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+  textarea {
+    height: 80px;
+    resize: none;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+}
+
+.form_buttons {
+  button {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+}
+
+.logout {
+  display: none;
+  padding: 20px 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .detailsdiv {
+    .desktop {
+      display: none;
+    }
+  }
+  .logout {
+    display: block;
+  }
+}

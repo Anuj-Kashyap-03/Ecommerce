@@ -1,0 +1,22 @@
+.address_form {
+  display: flex;
+  flex-direction: column;
+  padding: 44px 25px;
+  background: white;
+  gap: 30px;
+  .name_and_phone {
+    display: flex;
+    gap: 20px;
+  }
+  .city_and_state {
+    display: flex;
+    gap: 20px;
+  }
+  .pincode {
+    width: 50%;
+  }
+  .confirm_address {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,14 @@
+.reviewCard {
+  .reviewby {
+    display: flex;
+    gap: 10px;
+    .reviewrating {
+      display: flex;
+      gap: 4px;
+    }
+  }
+  span {
+    padding-left: 10px;
+    color: rgb(119, 117, 117);
+  }
+}

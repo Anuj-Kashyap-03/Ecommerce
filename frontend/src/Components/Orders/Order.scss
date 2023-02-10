@@ -1,0 +1,93 @@
+.odered_product {
+  display: flex;
+  justify-content: space-between;
+  .product_description {
+    max-height: 98px;
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    .image {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      min-width: 30%;
+    }
+    img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  }
+  .product_price {
+    .quantity {
+      color: #aba5a5;
+      text-align: center;
+    }
+  }
+}
+
+.order_details {
+  margin: 3%;
+  padding: 4%;
+  background: white;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  .id_and_status {
+    display: flex;
+    flex-direction: column;
+    .id {
+      h5 {
+        padding: 10px;
+        display: inline-block;
+        background: #6610f2;
+        color: white;
+        font-size: 14px;
+      }
+    }
+    .date {
+      span {
+        color: #7a7676;
+      }
+    }
+    .status {
+      color: green;
+    }
+  }
+  .ordered_products {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    .charges {
+      display: flex;
+      justify-content: space-between;
+      .charges_left {
+        flex: 1;
+        color: #0d6efd;
+        text-align: center;
+      }
+    }
+  }
+  .total {
+    text-align: end;
+  }
+  .other_details {
+    display: flex;
+    > div {
+      padding: 5px;
+      width: 50%;
+    }
+    .payment {
+      > div {
+        padding: 8px;
+      }
+    }
+    address {
+      padding: 8px;
+      font-size: 14px;
+      font-style: revert;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+}

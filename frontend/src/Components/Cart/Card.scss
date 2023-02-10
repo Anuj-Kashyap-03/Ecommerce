@@ -1,0 +1,107 @@
+.cart_page {
+  padding: 2%;
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  flex-direction: column;
+  gap: 20px;
+  .card_items {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .card_item {
+    padding: 3%;
+    background-color: white;
+    > a {
+      background-color: white;
+      width: 900px;
+      max-width: 100%;
+      display: flex;
+      gap: 20px;
+      text-decoration: none;
+      color: rgb(48, 48, 48);
+      transition: all 0.5s;
+    }
+    .image {
+      width: 35%;
+      img {
+        height: 15vw;
+        max-height: 100px;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .description {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .name {
+        p {
+          font-family: "Roboto";
+          padding-right: 10%;
+          font-size: 16px;
+          margin-bottom: 0;
+          max-height: 75px;
+          overflow: hidden;
+        }
+      }
+      .price {
+        display: flex;
+        margin-top: 5px;
+      }
+    }
+    .item_control {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 31px 10%;
+      gap: 18px;
+      .quantity {
+        display: flex;
+        gap: 10px;
+        button {
+          border: 1px solid rgb(212, 208, 208);
+        }
+        input {
+          border-radius: 10px;
+          border: 1px solid rgb(212, 208, 208);
+          width: 60px;
+          text-align: center;
+          padding: 3px;
+        }
+      }
+    }
+    .remove_from_card {
+      button {
+        background-color: #e92c2cdb;
+      }
+    }
+  }
+
+  .price_details {
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      padding: 0px 10%;
+      margin: 0;
+      color: rgb(121, 117, 117);
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10%;
+    }
+  }
+  .place_order {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px;
+  }
+}

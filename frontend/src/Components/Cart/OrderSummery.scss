@@ -1,0 +1,95 @@
+.confirm_order {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .address {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 40px;
+    h3 {
+      color: #706c6c;
+    }
+    address {
+      font-style: italic;
+      margin-right: 30px;
+    }
+  }
+  .card_items {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .card_item {
+    padding: 3%;
+    background-color: white;
+    > a {
+      background-color: white;
+      width: 900px;
+      max-width: 100%;
+      display: flex;
+      gap: 20px;
+      text-decoration: none;
+      color: rgb(48, 48, 48);
+      transition: all 0.5s;
+    }
+    .image {
+      width: 35%;
+      img {
+        height: 15vw;
+        max-height: 100px;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .description {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .name {
+        p {
+          font-family: "Roboto";
+          padding-right: 10%;
+          font-size: 18px;
+          margin-bottom: 0;
+          max-height: 85px;
+          overflow: hidden;
+        }
+      }
+      .price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+      }
+    }
+  }
+  .price_details {
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      padding: 0px 10%;
+      margin: 0;
+      color: rgb(121, 117, 117);
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10%;
+    }
+  }
+
+  .buttons_ {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    button{
+      width:130px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.Product {
+  max-width: 900px;
+  .ProductDetails {
+    .detailsBlock-2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .details {
+    background: white;
+    padding: 20px;
+  }
+  .detailsBlock-3-1 {
+    .quantity {
+      display: flex;
+      gap: 10px;
+      button {
+        border: 1px solid rgb(212, 208, 208);
+      }
+      input {
+        border-radius: 10px;
+        border: 1px solid rgb(212, 208, 208);
+        width: 60px;
+        text-align: center;
+        padding: 3px;
+      }
+    }
+  }
+  .add_to_card {
+    margin-top: 20px;
+    button {
+      width: 200px;
+    }
+  }
+  .reviews {
+    padding: 20px;
+    margin-top: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .review {
+      margin-top: 10px;
+      background: white;
+      border: 1px solid rgb(163, 159, 159);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .reviewheader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h2 {
+      text-align: center;
+    }
+    .submit_Dialog_button {
+      display: flex;
+      justify-content: space-between;
+      button {
+        height: 30px;
+      }
+    }
+  }
+}
+
+.submit_Dialog {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .submit_Dialog_button {
+    display: flex;
+    justify-content: space-between;
+    button {
+      height: 30px;
+    }
+  }
+}
+
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  margin: 0 !important;
+}
